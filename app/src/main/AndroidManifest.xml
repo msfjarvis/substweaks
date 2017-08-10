@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="substratum.theme.template"
+          package="me.msfjarvis.substweaks"
           android:installLocation="internalOnly">
 
     <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
@@ -52,9 +52,9 @@
         <meta-data
             android:name="Substratum_ThemeReady"
             android:value="@string/ThemeReadyRequirement"/>
-        <meta-data
+        <!--<meta-data
             android:name="Substratum_Wallpapers"
-            android:value="@string/ThemeWallpaperSource"/>
+            android:value="@string/ThemeWallpaperSource"/>-->
 
         <!-- SUBSTRATUM INTERNAL USE: DO NOT TOUCH -->
         <meta-data
