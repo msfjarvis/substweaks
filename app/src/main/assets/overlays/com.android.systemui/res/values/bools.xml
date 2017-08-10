@@ -1,4 +1,3 @@
 <resources>
-    <integer name="quick_settings_num_columns">9</integer>
     <bool name="config_keyguardShowVoiceAffordance">false</bool>
 </resources>

@@ -1,0 +1,4 @@
+<resources>
+    <integer name="quick_settings_num_columns">6</integer>
+</resources>
+
