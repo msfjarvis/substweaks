@@ -1,0 +1,4 @@
+<resources>
+    <bool name="config_showWifiActivity">false</bool>
+    <bool name="config_showWifiIndicatorWhenEnabled">false</bool>
+</resources>
