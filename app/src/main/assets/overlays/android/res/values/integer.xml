@@ -1,0 +1,3 @@
+<resources>
+    <integer name="config_backPanicBehavior">1</integer>
+</resources>
