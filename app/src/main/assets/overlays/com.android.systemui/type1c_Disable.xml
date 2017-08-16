@@ -1,0 +1,4 @@
+<resources>
+    <bool name="config_showAmpm">false</bool>
+</resources>
+
