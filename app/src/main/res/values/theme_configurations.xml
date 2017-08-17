@@ -9,7 +9,7 @@
     <!-- Do you support Stock but not Theme Ready Gapps? -> stock -->
     <string name="ThemeReadyRequirement">all</string>
     <!-- Theme wallpaper source (must be raw) -->
-    <string name="ThemeWallpaperSource"></string>
+    <!--<string name="ThemeWallpaperSource"></string>-->
     <!-- Do your theme support substratum legacy? -->
     <!-- If you choose not to support legacy, then change line 12 in AndroidManifest.xml -->
     <!-- from 'false' to 'true' to hide your theme on the Play Store from any stock ROM-->
@@ -19,13 +19,6 @@
 
     <!-- Put your theme changelog here -->
     <string-array name="ThemeChangelog">
-        <item>Android System overlay features :</item>
-        <item>--- Enable lockscreen rotation</item>
-        <item>--- Enable panic detection mode</item>
-        <item>Only remove tile labels when more than 6 columns are used</item>
-        <item>Fix compilation for Android System overlay</item>
-        <item>Android System overlay features :</item>
-        <item>--- Enable lockscreen rotation</item>
-        <item>--- Enable panic detection mode</item>
+        <item>Initial release, check play store for all features</item>
     </string-array>
 </resources>
