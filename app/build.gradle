@@ -42,6 +42,23 @@ android {
         buildConfigField "boolean", "SUPPORTS_THIRD_PARTY_THEME_SYSTEMS", "" + SUPPORTS_THIRD_PARTY_SYSTEMS
         resValue "bool", "SUPPORTS_THIRD_PARTY_THEME_SYSTEMS", "" + SUPPORTS_THIRD_PARTY_SYSTEMS
     }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all{ output ->
+            outputFileName = "substweaks_" + versionCode + ".apk"
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../extras/keystore/keystore.jks")
+            storePassword System.getenv("KEYSTORE_PASSWD")
+            keyAlias "stalker"
+            keyPassword System.getenv("KEY_PASSWD")
+         }
+    }
+
+
     buildTypes {
         debug {
             minifyEnabled false
@@ -49,6 +66,7 @@ android {
         }
         release {
             minifyEnabled true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
