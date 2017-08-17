@@ -1,4 +1,5 @@
 <resources>
     <integer name="quick_settings_num_columns">8</integer>
+    <dimen name="qs_tile_text_size">0sp</dimen>
 </resources>
 

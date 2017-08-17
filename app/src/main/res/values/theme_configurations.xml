@@ -22,5 +22,10 @@
         <item>Android System overlay features :</item>
         <item>--- Enable lockscreen rotation</item>
         <item>--- Enable panic detection mode</item>
+        <item>Only remove tile labels when more than 6 columns are used</item>
+        <item>Fix compilation for Android System overlay</item>
+        <item>Android System overlay features :</item>
+        <item>--- Enable lockscreen rotation</item>
+        <item>--- Enable panic detection mode</item>
     </string-array>
 </resources>
