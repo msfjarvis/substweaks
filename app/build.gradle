@@ -13,7 +13,7 @@ ext {
     SHOULD_ENCRYPT_ASSETS = false
 
     // Whether this theme supports third party theme systems
-    SUPPORTS_THIRD_PARTY_SYSTEMS = false
+    SUPPORTS_THIRD_PARTY_SYSTEMS = true
 
     // SUBSTRATUM INTERNAL VALUES: DO NOT TOUCH
     byte[] key = new byte[16]
