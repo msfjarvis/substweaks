@@ -1,0 +1,35 @@
+<resources>
+    <!-- Fade/zoom in/out duration & scale in a Launcher overlay transition.
+         Note: This should be less than the config_overlayTransitionTime as they happen together. -->
+    <integer name="config_overlayRevealTime">165</integer>
+    <integer name="config_overlaySlideRevealTime">240</integer>
+    <integer name="config_overlayTransitionTime">240</integer>
+
+    <!-- The duration of the animation from search hint to text entry -->
+    <integer name="config_searchHintAnimationDuration">38</integer>
+
+<!-- Workspace -->
+    <!-- The duration (in ms) of the fade animation on the object outlines, used when
+         we are dragging objects around on the home screen. -->
+    <integer name="config_dragOutlineFadeTime">675</integer>
+
+    <!-- Parameters controlling the animation for when an item is dropped on the home screen,
+         and it animates from its old position to the new one. -->
+    <integer name="config_dropAnimMinDuration">75</integer>
+    <integer name="config_dropAnimMaxDuration">375</integer>
+
+    <!-- The duration of the UserFolder opening and closing animation -->
+    <integer name="config_folderExpandDuration">90</integer>
+    <integer name="config_materialFolderExpandDuration">150</integer>
+    <integer name="config_materialFolderExpandStagger">45</integer>
+
+    <!-- The duration of the caret animation -->
+    <integer name="config_caretAnimationDuration">160</integer>
+
+<!-- Deep shortcuts -->
+    <integer name="config_deepShortcutOpenDuration">165</integer>
+    <integer name="config_deepShortcutArrowOpenDuration">60</integer>
+    <integer name="config_deepShortcutOpenStagger">32</integer>
+    <integer name="config_deepShortcutCloseDuration">120</integer>
+    <integer name="config_deepShortcutCloseStagger">16</integer>
+</resources>
