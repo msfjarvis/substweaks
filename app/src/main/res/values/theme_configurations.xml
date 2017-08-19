@@ -19,6 +19,9 @@
 
     <!-- Put your theme changelog here -->
     <string-array name="ThemeChangelog">
-        <item>Initial release, check play store for all features</item>
+        <item>Version 2.1 changelog: \n\n\n
+    -- Make temperature warning optional and configurable\n
+    -- Remove Pixel navbars for now (buggy, will be back soonTM)
+        </item>
     </string-array>
 </resources>
