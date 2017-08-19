@@ -1,0 +1,22 @@
+<resources>
+    <string-array name="text_colors_labels">
+        <item>Black text on white</item>
+        <item>White text on black</item>
+        <item>Green text on black</item>
+        <item>Amber text on black</item>
+        <item>Red text on black</item>
+        <item>Blue text on black</item>
+        <item>Pink text on black</item>
+        <item>Pink text on white</item>
+    </string-array>
+    <string-array name="text_colors_values" translatable="false">
+        <item>#000000/#fafafa</item>
+        <item>#fafafa/#000000</item>
+        <item>#4CAF50/#000000</item>
+        <item>#FF9800/#000000</item>
+        <item>#F44336/#000000</item>
+        <item>#3F51B5/#000000</item>
+        <item>#E91E63/#000000</item>
+        <item>#E91E63/#fafafa</item>
+    </string-array>
+</resources>
