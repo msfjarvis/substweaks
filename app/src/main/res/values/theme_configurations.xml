@@ -19,9 +19,11 @@
 
     <!-- Put your theme changelog here -->
     <string-array name="ThemeChangelog">
-        <item>Version 2.1 changelog: \n\n\n
-    -- Make temperature warning optional and configurable\n
-    -- Remove Pixel navbars for now (buggy, will be back soonTM)
+        <item>Version 2.3 changelog: \n\n\n
+-- Allow hiding Settings dashboard icons \n
+-- Add configurable rounded recents \n
+-- Add Pink on {White,Black} color schemes to Android Terminal \n
+-- Add Launcher3 overlay for improving responsiveness
         </item>
     </string-array>
 </resources>
