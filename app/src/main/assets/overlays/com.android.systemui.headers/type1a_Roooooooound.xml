@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="recents_task_view_rounded_corners_radius">16dp</dimen>
+    <dimen name="recents_task_view_shadow_rounded_corners_radius">32dp</dimen>
+</resources>
+
