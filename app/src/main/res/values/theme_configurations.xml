@@ -19,7 +19,11 @@
 
     <!-- Put your theme changelog here -->
     <string-array name="ThemeChangelog">
-        <item>Version 2.3 changelog: \n\n\n
+        <item>Version 2.4 changelog:\n
+-- Allow adjusting navbar height\n
+-- Move QS tile count into com.android.systemui.tiles
+-- Allow centering dashboard category titles\n\n</item>
+        <item>Version 2.3 changelog:\n
 -- Allow hiding Settings dashboard icons \n
 -- Add configurable rounded recents \n
 -- Add Pink on {White,Black} color schemes to Android Terminal \n
