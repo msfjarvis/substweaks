@@ -7,7 +7,7 @@
     <!-- Do you support Stock and Theme Ready Gapps? -> all -->
     <!-- Do you support Theme Ready but not Stock Gapps? -> ready -->
     <!-- Do you support Stock but not Theme Ready Gapps? -> stock -->
-    <string name="ThemeReadyRequirement">all</string>
+    <!--<string name="ThemeReadyRequirement"></string>-->
     <!-- Theme wallpaper source (must be raw) -->
     <!--<string name="ThemeWallpaperSource"></string>-->
     <!-- Do your theme support substratum legacy? -->
