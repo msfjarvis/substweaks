@@ -6,7 +6,7 @@
 
     <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
     <uses-permission android:name="android.permission.INTERNET" />
-	
+
 	<uses-feature
         android:name="projekt.substratum.theme"
         android:required="false" /> <!-- Set to true for block to be enabled -->
@@ -69,8 +69,7 @@
             android:value="@string/encryption_status"/>
         <meta-data
             android:name="supports_third_party_theme_systems"
-            android:value="@bool/SUPPORTS_THIRD_PARTY_THEME_SYSTEMS" />
+            android:value="false" />
 
     </application>
-
 </manifest>
