@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@*com.android.settings:id/dashboard_tile" android:background="@*android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@*com.android.settings:dimen/dashboard_tile_minimum_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@*android:id/icon" android:tint="@*android:color/transparent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerInside" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@*com.android.settings:style/TextAppearance.TileTitle" android:textAllCaps="true" android:textAlignment="center" android:ellipsize="marquee" android:id="@*android:id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <TextView android:textAppearance="@*com.android.settings:style/TextAppearance.Small" android:textColor="@*android:color/transparent" android:ellipsize="end" android:id="@*android:id/summary" android:layout_width="0.0dip" android:layout_height="0.0dip" android:maxLines="1" android:paddingEnd="@*com.android.settings:dimen/dashboard_padding_start" />
+    </LinearLayout>
+</LinearLayout>

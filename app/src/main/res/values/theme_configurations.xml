@@ -18,7 +18,7 @@
     <!-- from 'false' to 'true' to hide your theme on the Play Store from any stock ROM-->
     <bool name="ThemeSupportLegacy">true</bool>
     <!-- Does your theme support substratum samsung? -->
-    <bool name="ThemeSupportSamsung">true</bool>
+    <bool name="ThemeSupportSamsung">false</bool>
     <!-- Do you want to override the hero image auto color assignment? -->
     <!-- Don't force anything? -> auto -->
     <!-- Force black/dark icons? -> dark -->
@@ -26,5 +26,14 @@
     <string name="ThemeHeroOverride">auto</string>
     <!-- Put your theme changelog here, each item will be a new bullet point in the sheet -->
     <string-array name="ThemeChangelog">
+        <item>Version 2.6 changelog:\n
+--- Add separate option for centered category titles for stock users\n
+--- Separate the option for QS tile labels and make the tile count work\n
+    on landscape too. Thanks to ungeeked for these!\n
+--- Add ability to center dashboard items now. djdarkknight96 gave me the\n
+    assets for these weeks ago, only got around to adding them now. Check\
+    out his theme Sprite, it\'s dope!\n
+--- Make centered category headers be allcaps.
+        </item>
     </string-array>
 </resources>
