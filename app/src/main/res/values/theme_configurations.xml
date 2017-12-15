@@ -26,9 +26,14 @@
     <string name="ThemeHeroOverride">auto</string>
     <!-- Put your theme changelog here, each item will be a new bullet point in the sheet -->
     <string-array name="ThemeChangelog">
-        <item>Version 2.7-beta1 changelog:\n
+        <item>Version 2.7-beta2 changelog:\n
 --- Allow adding the settings button to the power menu\n
---- Hide the tuner icon on QS settings gear when SystemUI Tuner is enabled
+--- Hide the tuner icon on QS settings gear when SystemUI Tuner is enabled\n
+--- Allow disabling camera launch gesture\n
+--- Allow adding WiFi activity indicators\n
+--- Allow removing clear all button\n
+--- Allow removing statusbar content padding\n
+--- Allow to set headsup duration to 3 seconds
         </item>
     </string-array>
 </resources>
