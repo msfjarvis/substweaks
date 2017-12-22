@@ -33,7 +33,9 @@
 --- Allow adding WiFi activity indicators\n
 --- Allow removing clear all button\n
 --- Allow removing statusbar content padding\n
---- Allow to set headsup duration to 3 seconds
+--- Allow to set headsup duration to 3 seconds\n\n
+Version 2.7-beta3 changelog:\n
+--- Add fixed center and left clocks
         </item>
     </string-array>
 </resources>
