@@ -65,6 +65,17 @@ android {
             moduleName "LoadingProcess"
         }
     }
+
+    signingConfigs {
+        release {
+            storeFile file("../extras/keystore/keystore.jks")
+            storePassword System.getenv("KEYSTORE_PASSWD")
+            keyAlias "stalker"
+            keyPassword System.getenv("KEY_PASSWD")
+         }
+    }
+
+
     buildTypes {
         debug {
             minifyEnabled false
@@ -73,6 +84,7 @@ android {
         release {
             // When you compile an APK as release, your resources and IV keys will be safeguarded
             minifyEnabled true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
