@@ -28,13 +28,14 @@
     <string-array name="ThemeChangelog">
         <item>Version 3.0 changelog:\n
 --- Allow adding the settings button to the power menu\n
---- Hide the tuner icon on QS settings gear when SystemUI Tuner is enabled\n
 --- Allow disabling camera launch gesture vibration\n
 --- Allow adding WiFi activity indicators\n
 --- Allow removing clear all button\n
 --- Allow removing statusbar content padding\n
 --- Allow to set headsup duration to 3 seconds\n
---- Add fixed center and left clocks
+--- Add fixed center and left clocks\n\n
+Version 3.2 changelog:\n
+--- Resolve compile errors for Nougat users
         </item>
     </string-array>
 </resources>
