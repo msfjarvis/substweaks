@@ -26,16 +26,9 @@
     <string name="ThemeHeroOverride">auto</string>
     <!-- Put your theme changelog here, each item will be a new bullet point in the sheet -->
     <string-array name="ThemeChangelog">
-        <item>Version 3.0 changelog:\n
---- Allow adding the settings button to the power menu\n
---- Allow disabling camera launch gesture vibration\n
---- Allow adding WiFi activity indicators\n
---- Allow removing clear all button\n
---- Allow removing statusbar content padding\n
---- Allow to set headsup duration to 3 seconds\n
---- Add fixed center and left clocks\n\n
-Version 3.2 changelog:\n
---- Resolve compile errors for Nougat users
+        <item>Version 3.3 changelog:\n
+--- Add support for translucent QS\n
+--- Add support for clock mods on custom ROMs
         </item>
     </string-array>
 </resources>
