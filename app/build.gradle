@@ -24,6 +24,10 @@ ext {
     // there are issues with your theme (DEFAULT: false)
     SUPPORTS_THIRD_PARTY_SYSTEMS = false
 
+    // Enable asset validation on systems that _can_ do it, a.k.a. Linux
+    // needs the xmlstarlet package installed.
+    SHOULD_VALIDATE_ASSETS = false
+
     // Encryption values, do not touch as we generate a random key every time you compile!
     byte[] key = new byte[16]
     new Random().nextBytes(key)
@@ -103,6 +107,17 @@ dependencies {
     implementation 'com.github.javiersantos:PiracyChecker:1.1'
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version") {
         transitive = true
+    }
+}
+
+task validateAssets(type: Exec) {
+    final def stdout = new ByteArrayOutputStream()
+    commandLine './test_assets.sh'
+    standardOutput = stdout
+    ignoreExitValue true
+    println(stdout.toString())
+    if (stdout.toString().trim() != "") {
+        throw new GradleException("Assets are fucked!");
     }
 }
 
@@ -189,6 +204,7 @@ jbyte IV_KEY[] = ${IV_KEY_READY};
 }
 
 project.afterEvaluate {
+    preBuild.dependsOn validateAssets
     preBuild.dependsOn encryptAssets
 }
 
@@ -219,6 +235,11 @@ gradle.buildFinished {
 boolean shouldEncrypt() {
     ArrayList<String> tasks = project.gradle.startParameter.taskNames
     return SHOULD_ENCRYPT_ASSETS && Arrays.toString(tasks).toLowerCase().contains("release")
+}
+
+boolean shouldValidate() {
+    ArrayList<String> tasks = project.gradle.startParameter.taskNames
+    return SHOULD_VALIDATE_ASSETS && Arrays.toString(tasks).toLowerCase().contains("release")
 }
 
 repositories {
