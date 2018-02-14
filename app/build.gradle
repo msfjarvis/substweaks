@@ -26,7 +26,7 @@ ext {
 
     // Enable asset validation on systems that _can_ do it, a.k.a. Linux
     // needs the xmlstarlet package installed.
-    SHOULD_VALIDATE_ASSETS = false
+    SHOULD_VALIDATE_ASSETS = true
 
     // Encryption values, do not touch as we generate a random key every time you compile!
     byte[] key = new byte[16]
@@ -239,7 +239,7 @@ boolean shouldEncrypt() {
 
 boolean shouldValidate() {
     ArrayList<String> tasks = project.gradle.startParameter.taskNames
-    return SHOULD_VALIDATE_ASSETS && Arrays.toString(tasks).toLowerCase().contains("release")
+    return SHOULD_VALIDATE_ASSETS // && Arrays.toString(tasks).toLowerCase().contains("release")
 }
 
 repositories {
