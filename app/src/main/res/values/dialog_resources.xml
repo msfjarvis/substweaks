@@ -9,5 +9,6 @@
     <string name="launch_dialog_title">How to avoid getting called stupid on Play Store reviews</string>
     <string name="launch_dialog_content">R E A D\n\n\nSounds easy right? It is! Just pay attention to all the notices in the orange alert signs and never have to face a crash or bootloop again.</string>
     <string name="launch_dialog_positive">OK</string>
-    <string name="launch_dialog_negative"></string>
+    <string name="launch_dialog_negative" />
+    <string name="launch_dialog_negative_url" />
 </resources>
