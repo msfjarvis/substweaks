@@ -6,9 +6,9 @@
       ~ Custom dialog message on theme launch.
       ~ Add word in launch_dialog_negative to add a cancel button on the dialog
       -->
-    <string name="launch_dialog_title">How to avoid getting called stupid on Play Store reviews</string>
-    <string name="launch_dialog_content">R E A D\n\n\nSounds easy right? It is! Just pay attention to all the notices in the orange alert signs and never have to face a crash or bootloop again.</string>
+    <string name="launch_dialog_title">How to avoid compile errors/crashes/bootloops/divorces?</string>
+    <string name="launch_dialog_content">Just pay attention to all the notices in the orange alert signs, make sure you have read the Play Store release notes and never have to face a crash or bootloop again.</string>
     <string name="launch_dialog_positive">OK</string>
-    <string name="launch_dialog_negative" />
-    <string name="launch_dialog_negative_url" />
+    <string name="launch_dialog_negative">Support group</string>
+    <string name="launch_dialog_negative_url">https://t.me/greycesubstratum</string>
 </resources>
