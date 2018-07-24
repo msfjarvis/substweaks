@@ -20,14 +20,6 @@
     <string name="ThemeHeroOverride">auto</string>
     <!-- Put your theme changelog here, each item will be a new bullet point in the sheet -->
     <string-array name="ThemeChangelog">
-        <item>Version 3.4 changelog:\n
---- Add support for translucent QS\n
---- Add support for clock mods on custom ROMs (kinda)\n
---- Fix-up settings icon for power menu mods\n
---- Add a zero height navbar option\n
---- Add in a better looking default brightness slider thumb\n
---- Add in a real heroimage thanks to KRISHNA AR\n
---- Stash in some dank memes in statusbar overlay ;)
-        </item>
+        <item>:)</item>
     </string-array>
 </resources>
