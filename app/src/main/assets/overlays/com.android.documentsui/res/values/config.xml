@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <bool name="show_documents_root">true</bool>
-    <bool name="feature_command_interceptor">true</bool>
-    <bool name="feature_job_progress_dialog">true</bool>
-    <bool name="feature_inspector">true</bool>
-    <bool name="feature_debug_mode">true</bool>
-    <bool name="config_default_show_device_root">true</bool>
-</resources>
