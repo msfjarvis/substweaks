@@ -28,10 +28,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="projekt.substratum.lite.THEME"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <intent-filter>
                 <action android:name="projekt.substratum.GET_KEYS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -65,7 +61,7 @@
         <!-- SUBSTRATUM INTERNAL USE: DO NOT TOUCH -->
         <meta-data
             android:name="Substratum_Plugin"
-            android:value="14.0.2"/>
+            android:value="14.0.1"/>
         <meta-data
             android:name="Substratum_Encryption"
             android:value="@string/encryption_status"/>
