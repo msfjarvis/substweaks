@@ -29,11 +29,14 @@ android {
     compileSdkVersion 28
 
 
-    android.applicationVariants.all { final variant ->
-        variant.outputs.all {
-            outputFileName = "substweaks_${variant.versionCode}.apk"
+    if (System.getenv("DRONE") != "true") {
+        android.applicationVariants.all { final variant ->
+            variant.outputs.all {
+                outputFileName = "substweaks_${variant.versionCode}.apk"
+            }
         }
     }
+
     defaultConfig {
         // If you're planning to change up the package name, ensure you have read the readme
         // thoroughly!

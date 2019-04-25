@@ -9,3 +9,17 @@ steps:
     when:
       branch:
         - master
+
+  - name: telegram-deploy
+    image: msfjarvis/drone-telegram:local
+    settings:
+      channel_id: -1001114098324
+      artifact_path: app/build/outputs/apk/debug/app-debug.apk
+      major_minor: ci
+      filename: substweaks
+      bot_token:
+        from_secret: bot_token
+    when:
+      event:
+        exclude:
+          - pull_request
