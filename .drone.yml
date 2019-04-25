@@ -1,0 +1,11 @@
+kind: pipeline
+name: debug-test
+
+steps:
+  - name: build
+    image: msfjarvis/docker-android-sdk:latest
+    commands:
+      - ./gradlew assembleDebug
+    when:
+      branch:
+        - master
