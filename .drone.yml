@@ -23,3 +23,5 @@ steps:
       event:
         exclude:
           - pull_request
+      branch:
+        - master
