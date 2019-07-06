@@ -26,8 +26,7 @@ ext {
 }
 
 android {
-    compileSdkVersion 28
-
+    compileSdkVersion 29
 
     if (System.getenv("DRONE") != "true") {
         android.applicationVariants.all { final variant ->
