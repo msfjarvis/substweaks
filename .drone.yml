@@ -1,11 +1,26 @@
 kind: pipeline
-name: debug-test
+name: release-test
 
 steps:
+  - name: export-keys
+    image: msfjarvis/drone-decrypt-files:latest
+    settings:
+      decrypt_key:
+        from_secret: key
+      file_to_path_mapping:
+      - "ci/keystore.cipher:keystore.jks|ci/props.cipher:keystore.properties"
+    when:
+      branch:
+        exclude:
+        - l10n_master
+      event:
+        exclude:
+        - pull_request
+
   - name: build
     image: msfjarvis/docker-android-sdk:latest
     commands:
-      - ./gradlew assembleDebug
+      - ./gradlew assembleRelease
     when:
       branch:
         - master
@@ -14,7 +29,7 @@ steps:
     image: msfjarvis/drone-telegram:latest
     settings:
       channel_id: -1001114098324
-      artifact_path: app/build/outputs/apk/debug/app-debug.apk
+      artifact_path: app/build/outputs/apk/release/app-release.apk
       major_minor: ci
       filename: substweaks
       bot_token:
