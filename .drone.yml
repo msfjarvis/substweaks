@@ -1,42 +1,49 @@
+---
 kind: pipeline
 name: release-test
 
+platform:
+  os: linux
+  arch: amd64
+
 steps:
-  - name: export-keys
-    image: msfjarvis/drone-decrypt-files:latest
-    settings:
-      decrypt_key:
-        from_secret: key
-      file_to_path_mapping:
-      - "ci/keystore.cipher:keystore.jks|ci/props.cipher:keystore.properties"
-    when:
-      branch:
-        exclude:
-        - l10n_master
-      event:
-        exclude:
-        - pull_request
+- name: export-keys
+  image: msfjarvis/drone-decrypt-files:latest
+  settings:
+    decrypt_key:
+      from_secret: key
+    file_to_path_mapping:
+    - "ci/keystore.cipher:keystore.jks|ci/props.cipher:keystore.properties"
+  when:
+    branch:
+      exclude:
+      - l10n_master
+    event:
+      exclude:
+      - pull_request
 
-  - name: build
-    image: msfjarvis/docker-android-sdk:latest
-    commands:
-      - ./gradlew assembleRelease
-    when:
-      branch:
-        - master
+- name: build
+  image: msfjarvis/docker-android-sdk:latest
+  commands:
+  - ./gradlew assembleRelease
+  when:
+    branch:
+    - master
 
-  - name: telegram-deploy
-    image: msfjarvis/drone-telegram:latest
-    settings:
-      channel_id: -1001114098324
-      artifact_path: app/build/outputs/apk/release/app-release.apk
-      major_minor: ci
-      filename: substweaks
-      bot_token:
-        from_secret: bot_token
-    when:
-      event:
-        exclude:
-          - pull_request
-      branch:
-        - master
+- name: telegram-deploy
+  image: msfjarvis/drone-telegram:latest
+  settings:
+    artifact_path: app/build/outputs/apk/release/app-release.apk
+    bot_token:
+      from_secret: bot_token
+    channel_id: -1001114098324
+    filename: substweaks
+    major_minor: ci
+  when:
+    branch:
+    - master
+    event:
+      exclude:
+      - pull_request
+
+...
