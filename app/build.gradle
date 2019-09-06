@@ -25,6 +25,8 @@ ext {
     IV_KEY = iv
 }
 
+final def keystorePropertiesFile = rootProject.file("keystore.properties")
+
 android {
     compileSdkVersion 29
 
@@ -57,16 +59,20 @@ android {
         resValue "string", "encryption_status", (shouldEncrypt() ? "onCompileVerify" : "false")
     }
 
-    signingConfigs {
-        release {
-            storeFile file("../extras/keystore/keystore.jks")
-            storePassword System.getenv("KEYSTORE_PASSWD")
-            keyAlias "stalker"
-            keyPassword System.getenv("KEY_PASSWD")
-         }
+    if (keystorePropertiesFile.exists()) {
+        final def keystoreProperties = new Properties()
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+        signingConfigs {
+            release {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile rootProject.file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+        buildTypes.debug.signingConfig = signingConfigs.release
+        buildTypes.release.signingConfig = signingConfigs.release
     }
-
-
     buildTypes {
         debug {
             minifyEnabled false
@@ -79,7 +85,6 @@ android {
         }
         release {
             minifyEnabled true
-            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
             // Themers: DO NOT MODIFY
