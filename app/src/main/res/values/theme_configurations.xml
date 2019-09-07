@@ -20,11 +20,10 @@
     <string name="ThemeHeroOverride">auto</string>
     <!-- Put your theme changelog here, each item will be a new bullet point in the sheet -->
     <string-array name="ThemeChangelog">
-        <item>Version 3.6 changelog:\n
---- Full LIT support for Android Pie, thanks to Maxr1998\n
---- Re-add Lockscreen AM/PM options for CAF ROMs\n
---- Deprecate DocumentsUI overlay\n
---- Rename Settings type2 option for clarity
+        <item>Version 4.0 changelog:\n
+--- Allow changing statusbar height\n
+--- Allow changing navbar height\n
+--- Support Substratum Lite\n
         </item>
     </string-array>
 </resources>
