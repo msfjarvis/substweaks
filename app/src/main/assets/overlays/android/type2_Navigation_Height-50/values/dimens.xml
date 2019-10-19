@@ -3,4 +3,6 @@
     <dimen name="navigation_bar_height">50.0dip</dimen>
     <dimen name="navigation_bar_height_landscape">50.0dip</dimen>
     <dimen name="navigation_bar_width">50.0dip</dimen>
+    <dimen name="navigation_bar_frame_height">50.0dip</dimen>
+    <dimen name="navigation_bar_frame_height_landscape">50.0dip</dimen>
 </resources>
