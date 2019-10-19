@@ -33,11 +33,10 @@ steps:
 - name: telegram-deploy
   image: msfjarvis/drone-telegram:latest
   settings:
-    artifact_path: app/build/outputs/apk/release/app-release.apk
+    artifacts: "app/build/outputs/apk/release/app-release.apk:substweaks"
     bot_token:
       from_secret: bot_token
     channel_id: -1001114098324
-    filename: substweaks
     major_minor: ci
   when:
     branch:
