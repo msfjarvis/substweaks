@@ -1,0 +1,16 @@
+apply plugin: 'com.diffplug.gradle.spotless'
+
+spotless {
+    format 'XML', {
+      target '**/*.xml'
+      indentWithSpaces()
+      trimTrailingWhitespace()
+      endWithNewline()
+    }
+    groovyGradle {
+      target '**/*.gradle'
+      indentWithSpaces()
+      trimTrailingWhitespace()
+      endWithNewline()
+    }
+}
