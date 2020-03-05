@@ -9,7 +9,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.android.tools:r8:1.5.70"
-        classpath "com.diffplug.spotless:spotless-plugin-gradle:3.27.1"
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:3.27.2"
     }
 }
 
